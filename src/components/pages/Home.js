@@ -34,13 +34,10 @@ export default function Home(props) {
                     >
                         <CardContent sx={{ flexGrow: 1}}>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Welcome Elk Plain 3rd and 4th graders!
+                                Welcome Costco Wholesale Renegades
                             </Typography>
                             <Typography>
-                                Head Coach: &ensp; Tony Hamilton &emsp; (253)224-0653
-                            </Typography>
-                            <Typography>
-                                Assistant Coach: &ensp; Dian Gigrich &emsp; (253)241-1773 (it's pronounced Diane)
+                                Creator: &ensp; Dian Sherman &emsp; dianesherman@gmail.com
                             </Typography>
                         </CardContent>
                     </Card>

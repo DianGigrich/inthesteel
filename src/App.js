@@ -35,7 +35,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Droid Sans',
+    fontFamily: 'Monospace',
   }
 });
 
