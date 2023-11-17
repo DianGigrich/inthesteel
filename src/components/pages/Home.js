@@ -18,11 +18,11 @@ export default function Home(props) {
                  borderTop={0}
                  borderColor="primary.main"
                     component="h1"
-                    variant="h2"
+                    variant="h3"
                     align="left"
                     gutterBottom
                 >
-                    In The Steel
+                    Welcome Costco Wholesale Renegades
                 </Typography>
             </Container>
             <Grid container sx={{ p: 4}}>
@@ -33,11 +33,9 @@ export default function Home(props) {
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
                         <CardContent sx={{ flexGrow: 1}}>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Welcome Costco Wholesale Renegades
-                            </Typography>
+                            
                             <Typography>
-                                Creator: &ensp; Dian Sherman &emsp; dianesherman@gmail.com
+                                Note: &ensp; Use Responsibly &emsp; --thanks
                             </Typography>
                         </CardContent>
                     </Card>
