@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Box, Tabs, Tab} from '@mui/material/';
 
 
+
 export default function Navigationbar(props) {
   const navigate = useNavigate()
 
@@ -24,9 +25,9 @@ export default function Navigationbar(props) {
         aria-label="secondary tabs"
         sx={{ border: 5 , borderColor: 'primary.main'}}
       >
-        <Tab sx={{ color: "#ADD8E6"}}value="Home" label="Home" onClick={() => navigate('/')} />
+        <Tab className="Tab" value="Home" label="Home" onClick={() => navigate('/')} />
 
-        <Tab textColor="#FFFFFF" value="Fence" label="Fence" onClick={() => navigate('/Fence')} />
+        <Tab className="Tab" value="Fence" label="Fence" onClick={() => navigate('/Fence')} />
 
       </Tabs>
     </Box>

@@ -5,7 +5,6 @@ import Fence from "./components/pages/Fence";
 import Header from "./components/Header";
 import Navbar from "./components/Navigationbar";
 import Home from "./components/pages/Home";
-
 import Error from "./components/pages/Error";
 
 

@@ -9,7 +9,9 @@ export default function Fence (props) {
             pb: 6,
           }}
           >
-            <Typography>Fence item</Typography>
+            <Typography
+            color="text.primary"
+            >Fence item</Typography>
           </Box>
     )
 }
