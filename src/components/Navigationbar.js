@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Box, Tabs, Tab} from '@mui/material/';
+import { Box, Tabs, Tab, Typography} from '@mui/material/';
 
 
 
@@ -16,6 +16,9 @@ export default function Navigationbar(props) {
   return (
   
     <Box sx={{ width: '100%' }}>
+      <Typography>
+      Why dont my tab colors work
+    </Typography>
       <Tabs
         centered
         value={value}
@@ -23,11 +26,11 @@ export default function Navigationbar(props) {
         onChange={handleTabChange}
         indicatorColor="primary"
         aria-label="secondary tabs"
-        sx={{ border: 5 , borderColor: 'primary.main'}}
+        sx={{ border: 5 , borderColor: 'primary.main' }}
       >
-        <Tab className="Tab" value="Home" label="Home" onClick={() => navigate('/')} />
+        <Tab sx={{ color: "#FFFFFF"}} value="Home" label="Home" onClick={() => navigate('/')} />
 
-        <Tab className="Tab" value="Fence" label="Fence" onClick={() => navigate('/Fence')} />
+        <Tab value="Fence" label="Fence" onClick={() => navigate('/Fence')} />
 
       </Tabs>
     </Box>

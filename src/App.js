@@ -52,7 +52,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-      
           <Route path="/fence" element={<Fence />} />
           <Route path="*" element={<Error/>} />
         </Routes>
