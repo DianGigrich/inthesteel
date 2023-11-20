@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StickyFooter from "./components/Footer";
-import Fence from "./components/pages/Fence";
+import Fence from "./components/pages/Search";
 import Header from "./components/Header";
 import Navbar from "./components/Navigationbar";
 import Home from "./components/pages/Home";
