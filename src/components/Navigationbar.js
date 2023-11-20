@@ -78,7 +78,7 @@ React.useEffect(() => {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          Dashboard
+          Dashboard I dont feel like doing this today.
         </Button>
         <Popper
           open={open}
