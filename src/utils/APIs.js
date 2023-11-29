@@ -35,28 +35,28 @@ const  API = {
             }
         }).then(res=>res.json())
     },
-    createTodo:(todoObj,token)=>{
-        return fetch(`${URL_PREFIX}/api/todos`,{
+    createItem:(itemObj,token)=>{
+        return fetch(`${URL_PREFIX}/api/items`,{
             method:"POST",
-            body:JSON.stringify(todoObj),
+            body:JSON.stringify(itemObj),
             headers:{
                 "Content-Type":"application/json",
                 "Authorization":`Bearer ${token}`
             }
         }).then(res=>res.json())
     },
-    deleteTodo:(todoId,token)=>{
-        return fetch(`${URL_PREFIX}/api/todos/${todoId}`,{
+    deleteItem:(itemId,token)=>{
+        return fetch(`${URL_PREFIX}/api/items/${itemId}`,{
             method:"DELETE",
             headers:{
                 "Authorization":`Bearer ${token}`
             }
         }).then(res=>res.json())
     },
-    editTodo:(todoObj,todoId,token)=>{
-        return fetch(`${URL_PREFIX}/api/todos/${todoId}`,{
+    editItem:(itemObj,itemId,token)=>{
+        return fetch(`${URL_PREFIX}/api/items/${itemId}`,{
             method:"PUT",
-            body:JSON.stringify(todoObj),
+            body:JSON.stringify(itemObj),
             headers:{
                 "Content-Type":"application/json",
                 "Authorization":`Bearer ${token}`
