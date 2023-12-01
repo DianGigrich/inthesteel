@@ -8,19 +8,19 @@ function Header(props) {
     return (
 
         <React.Fragment >
-            <Toolbar sx={{ border: 5 , borderColor: 'primary.main'}}>
+            <Toolbar sx={{ border: 5, borderColor: 'primary.main' }}>
                 <Typography
 
                     component="h2"
                     variant="h2"
                     align="center"
-                    color= "#4aedc4"
+                    color="#4aedc4"
                     sx={{ flex: 1, letterSpacing: 6 }}
                     className="dragons"
                 >
-                    
+
                     <strong>In The Steel</strong>
-                    
+
                 </Typography>
 
             </Toolbar>
@@ -29,7 +29,7 @@ function Header(props) {
                 variant="dense"
                 sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
             >
-            
+
             </Toolbar>
         </React.Fragment>
 

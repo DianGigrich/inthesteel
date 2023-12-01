@@ -54,10 +54,6 @@ React.useEffect(() => {
 
   // end menu functions 
 
-  const handleTabChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
   <>
   <Stack direction="row" spacing={2}>
