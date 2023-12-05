@@ -14,8 +14,8 @@ function Header(props) {
                     component="h2"
                     variant="h2"
                     align="center"
-                    color="#4aedc4"
-                    sx={{ flex: 1, letterSpacing: 6 }}
+                    color="#FF0000"
+                    sx={{ flex: 1, letterSpacing: 2 }}
                     className="dragons"
                 >
 

@@ -28,6 +28,9 @@ const handleClose = (event) => {
   if (anchorRef.current && anchorRef.current.contains(event.target)) {
     return;
   }
+  // TODO WORKING ON THIS PART, TRYING TO NAVIGATE FROM THIS DROPDOWN LIST
+  setValue(event.target)
+  navigate(value)
   
 
   setOpen(false);
