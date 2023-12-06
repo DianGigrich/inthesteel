@@ -22,7 +22,9 @@ const  API = {
             }
         }).then(res=>res.json())
     },
-    // examples TO DO. make these relevant to connect to backend
+    
+
+    // user information
     getUserTodos:(userId)=>{
         return fetch(`${URL_PREFIX}/api/users/${userId}`).then(res=>res.json())
 
@@ -35,6 +37,8 @@ const  API = {
             }
         }).then(res=>res.json())
     },
+// examples TODO. make these relevant to connect to backend
+    // item REST
     createItem:(itemObj,token)=>{
         return fetch(`${URL_PREFIX}/api/items`,{
             method:"POST",
