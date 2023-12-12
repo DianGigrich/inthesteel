@@ -33,6 +33,12 @@ export default function Home(props) {
                                 Note: &ensp; Use Responsibly &emsp; --thanks
                             </Typography>
                         </CardContent>
+                        <CardContent sx={{ flexGrow: 1 }}>
+
+                            <Typography>
+                                For exclusive use of Dian and those deemed worthy.
+                            </Typography>
+                        </CardContent>
                     </Card>
                 </Grid>
 
