@@ -1,8 +1,17 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { Container, Grid, Card, CardContent, Typography, Box } from '@mui/material';
 
 
 export default function Home(props) {
+    const [newItem, setNewItem] = useState("")
+// fix the todos and tasks
+    useEffect(()=>{
+        API.getUserFence(props.userId).then(data=>{
+            console.log(data)
+            setTasks(data.Todos)
+        })
+    },[props.userId])
+
     return (
         <>
             <Container

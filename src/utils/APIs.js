@@ -25,7 +25,7 @@ const  API = {
     
 
     // user information
-    getUserTodos:(userId)=>{
+    getUserFence:(userId)=>{
         return fetch(`${URL_PREFIX}/api/users/${userId}`).then(res=>res.json())
 
     },
@@ -59,6 +59,35 @@ const  API = {
     },
     editItem:(itemObj,itemId,token)=>{
         return fetch(`${URL_PREFIX}/api/items/${itemId}`,{
+            method:"PUT",
+            body:JSON.stringify(itemObj),
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization":`Bearer ${token}`
+            }
+        }).then(res=>res.json())
+    },
+    // for fence
+    createFence:(fenceObj,token)=>{
+        return fetch(`${URL_PREFIX}/api/fence`,{
+            method:"POST",
+            body:JSON.stringify(fenceObj),
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization":`Bearer ${token}`
+            }
+        }).then(res=>res.json())
+    },
+    deleteFence:(fenceId,token)=>{
+        return fetch(`${URL_PREFIX}/api/fence/${fenceId}`,{
+            method:"DELETE",
+            headers:{
+                "Authorization":`Bearer ${token}`
+            }
+        }).then(res=>res.json())
+    },
+    editFence:(fenceObj,fenceId,token)=>{
+        return fetch(`${URL_PREFIX}/api/fences/${fenceId}`,{
             method:"PUT",
             body:JSON.stringify(itemObj),
             headers:{
