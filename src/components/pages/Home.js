@@ -8,7 +8,7 @@ export default function Home(props) {
     useEffect(()=>{
         API.getUserFence(props.userId).then(data=>{
             console.log(data)
-            setTasks(data.Todos)
+            setTasks(data.Items)
         })
     },[props.userId])
 
@@ -50,8 +50,6 @@ export default function Home(props) {
                         </CardContent>
                     </Card>
                 </Grid>
-
-
 
 
             </Grid>
