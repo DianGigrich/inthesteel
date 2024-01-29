@@ -1,16 +1,10 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react'
 import { Container, Grid, Card, CardContent, Typography, Button } from '@mui/material';
 
 
 export default function Home(props) {
-    const [newItem, setNewItem] = useState("")
-// fix the todos and tasks
-    useEffect(()=>{
-        API.getUserFence(props.userId).then(data=>{
-            console.log(data)
-            setTasks(data.Items)
-        })
-    },[props.userId])
+
+
 
     return (
         <>
@@ -51,6 +45,7 @@ export default function Home(props) {
                     </Card>
                     <Button></Button>
                 </Grid>
+
 
 
             </Grid>
