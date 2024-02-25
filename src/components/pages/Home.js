@@ -42,6 +42,12 @@ export default function Home(props) {
                                 For exclusive use of Dian and those deemed worthy.
                             </Typography>
                         </CardContent>
+                        <CardContent sx={{ flexGrow: 1 }}>
+
+                            <Typography>
+                                This seems a moot point. i know where everything is now.
+                            </Typography>
+                        </CardContent>
                     </Card>
                     <Button></Button>
                 </Grid>
